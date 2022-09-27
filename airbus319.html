@@ -1,7 +1,7 @@
 <!doctype html>
     <html lang="en">
     <head>
-        <title>Checklists pour X-Plane 11</title>
+        <title>Checklists pour X-Plane 12</title>
         <meta charset="UTF-8">
         <meta name="Content-Type" content="UTF-8">
         <meta name="Content-Language" content="fr">
@@ -102,6 +102,7 @@
                                 <li class="list-group-item titre-et-element-primaire">WEATHER RADAR SYSTEM PANEL</li>
                                 <li class="list-group-item element-primaire">MULTISCAN <kbd>AUTO</kbd></li>
                                 <li class="list-group-item element-primaire">GCS <kbd>AUTO</kbd></li>
+                                <hr>
                                 <li class="list-group-item titre-et-element-primaire">ECAM SYSTEM CHECK</li>
                                 <li class="list-group-item element-primaire">HYD <kbd>PRESS</kbd> (CHECK HYDRAULIC LEVEL)</li>
                                 <li class="list-group-item element-primaire">ENG <kbd>PRESS</kbd> (CHECK OIL LEVEL)</li>
@@ -146,6 +147,7 @@
                                 <li class="list-group-item">BARO DEPARTURE <kbd>SET</kbd></li>
                                 <li class="list-group-item">VHF1 BUTTON <kbd>OFF</kbd> (NO WHITE)</li>
                                 <li class="list-group-item">ALTITUDE <kbd>SET</kbd></li>
+                                <li class="list-group-item">FCU CSTR <kbd>ON</kbd></li>
                                 <li class="list-group-item">FCU MODE SELECT <kbd>ARC</kbd></li>
                                 <li class="list-group-item">FCU ZOOM SELECT <kbd>20</kbd></li>
                                 <hr>
@@ -161,8 +163,8 @@
                             <ul class="list-group">
                                 <li class="list-group-item titre-et-element-primaire">BEFORE PUSHBACK</li>
                                 <li class="list-group-item element-primaire element-lumiere">BEACON <kbd>ON</kbd></li>
-                                <li class="list-group-item element-primaire">EXTERIOR POWER <kbd>OFF</kbd></li>
                                 <li class="list-group-item element-primaire">APU BLEED <kbd>ON</kbd></li>
+                                <li class="list-group-item element-primaire">EXTERIOR POWER <kbd>OFF</kbd></li>
                                 <li class="list-group-item element-primaire">RADIO <kbd>MECH</kbd> EXT PWR <kbd>OFF</kbd></li>
                                 <li class="list-group-item titre-et-element-primaire">ATC TCAS PANEL</li>
                                 <li class="list-group-item element-primaire">TRANSPONDER <kbd>ON</kbd></li>
@@ -176,13 +178,9 @@
                                 <li class="list-group-item titre-et-element-primaire">ENGINE START</li>
                                 <li class="list-group-item element-primaire">ENGINE MODE <kbd>START</kbd></li>
                                 <li class="list-group-item element-primaire list-group-item-danger">ENGINE 1 <kbd>START</kbd></li>
-                                <li class="list-group-item element-primaire">CHRONO <kbd>START</kbd></li>
                                 <li class="list-group-item element-primaire"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL ENGINE 1 N1 AVAILABLE ")</li>
-                                <li class="list-group-item element-primaire">CHRONO <kbd>STOP</kbd></li>
                                 <li class="list-group-item element-primaire list-group-item-danger">ENGINE 2 <kbd>START</kbd></li>
-                                <li class="list-group-item element-primaire">CHRONO <kbd>START</kbd></li>
                                 <li class="list-group-item element-primaire"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL ENGINE 2 N1 AVAILABLE ")</li>
-                                <li class="list-group-item element-primaire">CHRONO <kbd>STOP</kbd></li>
                             </ul>
                         </div>
                         <div class="tab-pane" id="list-after-start">
@@ -200,11 +198,11 @@
                                 <li class="list-group-item">T.O CONFIG <kbd>PUSH</kbd></li>
                                 <hr>
                                 <li class="list-group-item titre-et-element-primaire">WEATHER RADAR SYSTEM PANEL</li>
-                                <li class="list-group-item">RADAR SYS <kbd>1</kbd></li>
-                                <li class="list-group-item">PWS (Predictive WindShear)<kbd>AUTO</kbd></li>
+                                <li class="list-group-item element-primaire">RADAR SYS <kbd>1</kbd></li>
+                                <li class="list-group-item element-primaire">PWS (Predictive WindShear)<kbd>AUTO</kbd></li>
                                 <li class="list-group-item titre-et-element-primaire">ATC TCAS PANEL</li>
-                                <li class="list-group-item">TCAS MODE SELECTOR <kbd>TA/RA</kbd></li>
-                                <li class="list-group-item">TCAS TRAFIC SELECTOR <kbd>ABV</kbd></li>
+                                <li class="list-group-item element-primaire">TCAS MODE SELECTOR <kbd>TA/RA</kbd></li>
+                                <li class="list-group-item element-primaire">TCAS TRAFIC SELECTOR <kbd>ABV</kbd></li>
                                 <hr>
                                 <li class="list-group-item">CALL FWD (OVERHEAD) <kbd>PUSH</kbd> (CLEAR CONFIGURATION STATUS ECAM)</li>
                             </ul>
@@ -342,20 +340,23 @@
                         <div class="tab-pane" id="list-parking">
                             <ul class="list-group">
                                 <li class="list-group-item list-group-item-danger">PARKING BRAKE <kbd>SET</kbd></li>
-                                <li class="list-group-item">RADIO <kbd>MECH</kbd> CHOCKS <kbd>REMOVE</kbd></li>
+                                <li class="list-group-item">RADIO <kbd>MECH</kbd> CHOCKS <kbd>ADD</kbd></li>
+                                <li class="list-group-item">RADIO <kbd>MECH</kbd> EXT PWR <kbd>ADD</kbd></li>
                                 <hr>
+                                <li class="list-group-item">EXTERIOR POWER <kbd>ON</kbd></li>
                                 <li class="list-group-item">APU BLEED <kbd>ON</kbd></li>
                                 <li class="list-group-item">ENGINE 1 <kbd>OFF</kbd></li>
                                 <li class="list-group-item">ENGINE 2 <kbd>OFF</kbd></li>
+                                <hr>
                                 <li class="list-group-item titre-et-element-primaire">ATC TCAS PANEL</li>
                                 <li class="list-group-item element-primaire">TRANSPONDER <kbd>AUTO</kbd></li>
                                 <li class="list-group-item element-primaire">TCAS MODE SELECTOR <kbd>STBY</kbd></li>
-                                <hr>
-                                <li class="list-group-item element-lumiere">BEACON <kbd>OFF</kbd></li>
-                                <li class="list-group-item element-lumiere">RUNWAY TURN <kbd>OFF</kbd></li>
-                                <li class="list-group-item element-lumiere">NOSE LIGHT <kbd>OFF</kbd></li>
-                                <li class="list-group-item">SEATBELTS <kbd>OFF</kbd></li>
-                                <li class="list-group-item">FUEL PUMPS (6) <kbd>OFF</kbd></li>
+                                <li class="list-group-item titre-et-element-primaire">OVERHEAD</li>
+                                <li class="list-group-item element-primaire element-lumiere">BEACON <kbd>OFF</kbd></li>
+                                <li class="list-group-item element-primaire element-lumiere">RUNWAY TURN <kbd>OFF</kbd></li>
+                                <li class="list-group-item element-primaire element-lumiere">NOSE LIGHT <kbd>OFF</kbd></li>
+                                <li class="list-group-item element-primaire">SEATBELTS <kbd>OFF</kbd></li>
+                                <li class="list-group-item element-primaire">FUEL PUMPS (6) <kbd>OFF</kbd></li>
                                 <hr>
                                 <li class="list-group-item titre-et-element-primaire">GROUND HANDLING</li>
                                 <li class="list-group-item element-primaire titre-sans-element-primaire">OPEN THE GROUND HANDLING MENU / SELECT SERVICES</li>
@@ -372,11 +373,12 @@
                                 <li class="list-group-item">NO SMOKING <kbd>OFF</kbd></li>
                                 <li class="list-group-item">EMER EXIT LT <kbd>OFF</kbd></li>
                                 <hr>
-                                <li class="list-group-item titre-et-element-primaire"> WHEN PASSENGER ARE GONES</li>
+                                <li class="list-group-item titre-et-element-primaire"> WHEN PASSENGERS ARE GONES</li>
                                 <li class="list-group-item element-primaire">APU BLEED <kbd>OFF</kbd></li>
                                 <li class="list-group-item element-primaire">APU MASTER <kbd>OFF</kbd></li>
                                 <li class="list-group-item element-primaire">APU START <kbd>OFF</kbd></li>
                                 <li class="list-group-item element-primaire">BATTERY 1 & 2 <kbd>OFF</kbd></li>
+                                <li class="list-group-item element-primaire">EXTERIOR POWER <kbd>OFF</kbd></li>
                             </ul>
                         </div>
                     </div>
@@ -395,7 +397,15 @@
                             <li class="list-group-item titre-fonce">SIMBRIEF (Desktop)</li>
                             <li class="list-group-item">Créé un vol; Générer le plan de vol OFP;</li>
                             <li class="list-group-item">À la page 2 du document PDF preview, copier le « routing »</li>
-                            <li class="list-group-item titre-fonce">LITTLE NAVMAP (Desktop)</li>
+                            <li class="list-group-item titre-fonce">SIM TOOLKIT PRO / FLIGHT SCHEDULE (Desktop)</li>
+                            <li class="list-group-item">Choisissez Real Flight; Saisissez l'opérateur (comme Air Canada);</li>
+                            <li class="list-group-item">Filtrer avec un choix d'aircraf; Filtrer avec Shortest flight;</li>
+                            <li class="list-group-item">Notez le Flight Number avant de faire dispatch; Générer le plan de vol;</li>
+                            <li class="list-group-item">Copier le « routing »</li>
+                            <li class="list-group-item titre-fonce">SIM TOOLKIT PRO / PLAN A FLIGHT (Desktop)</li>
+                            <li class="list-group-item">Saisissez les départs et destinations; Générer le plan de vol;</li>
+                            <li class="list-group-item">Copier le « routing »</li>
+                            <li class="list-group-item titre-fonce">Valider le plan de vol avec LITTLE NAVMAP (Desktop)</li>
                             <li class="list-group-item">Choisir l’option nouveau plan de vol à partir de la description de l’itinéraire</li>
                             <li class="list-group-item">Enlever les références de pistes (genre "/24r")</li>
                             <li class="list-group-item">Cliquez sur lire la description de l’itinéraire</li>
@@ -419,7 +429,7 @@
                     </div>
                     <div class="modal-body">
                         <ul class="list-group">
-                            <li class="list-group-item titre-et-element-primaire">IMPORTATION DU PLAN DE VOL DE SIMBRIEF VIA LE MDCU</li>
+                            <li class="list-group-item titre-et-element-primaire">VALIDATION DU TYPE DE MOTEUR ET DE L'AIRAC</li>
                             <li class="list-group-item">Cliquez sur le bouton <kbd>DATA</kbd></li>
                             <li class="list-group-item">Cliquez sur le bouton à gauche de A/C STATUS</li>
                         </ul>
@@ -442,8 +452,15 @@
                             <li class="list-group-item titre-et-element-primaire">IMPORTATION DU PLAN DE VOL DE SIMBRIEF VIA LE MDCU</li>
                             <li class="list-group-item">Cliquez sur le bouton <kbd>INIT</kbd> <kbd>A</kbd></li>
                             <li class="list-group-item">Cliquez sur le bouton à droite de INIT REQUEST*</li>
+                            <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL F-PLN DATALINK IN PROG")</li>
+                            <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL AOC ACT F-PLN UPLINK")</li>
+                            <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL PERF DATA UPLINK")</li>
                             <li class="list-group-item titre-et-element-primaire">INITIALISER LES IRS</li>
                             <li class="list-group-item">Cliquez sur le bouton à droite de ALIGN IRS</li>
+                            <li class="list-group-item titre-et-element-primaire">REQUEST WIND</li>
+                            <li class="list-group-item">Cliquez sur le bouton à droite de WIND</li>
+                            <li class="list-group-item">Cliquez sur le bouton à droite de WIND REQUEST*</li>
+                            <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL WIND DATA UPLINK")</li>
                         </ul>
                     </div>
                     <div class="modal-footer">
@@ -704,7 +721,8 @@
                                     <li class="list-group-item">Cliquez sur le bouton <kbd>PERF</kbd></li>
                                     <li class="list-group-item titre-et-element-primaire">TAKE OFF PAGE</li>
                                     <li class="list-group-item">Cliquez sur le bouton à gauche de TO DATA</li>
-                                    <li class="list-group-item">Cliquez sur le bouton à droite de TO DATA REQUEST* (WAIT TAKE OFF DATA UPLINK)</li>
+                                    <li class="list-group-item">Cliquez sur le bouton à droite de TO DATA REQUEST*</li>
+                                    <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL TAKE OFF DATA UPLINK")</li>
                                     <li class="list-group-item">Cliquez sur le bouton à gauche de TO DATA</li>
                                     <li class="list-group-item">Cliquez sur le bouton à droite de INSERT UPLINK*</li>
                                     <hr>
