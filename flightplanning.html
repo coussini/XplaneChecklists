@@ -33,9 +33,9 @@
                 <div class="col-4">
                     <h1 class="text-muted">Checklist</h1>
                     <div class="list-group defile" id="list-tab">
-                        <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-simbrief">Create a Flight Plan Using Simbrief (alone)</a>
-                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar2">Cockpit Preparation 2/2</a>
-                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-preflight1">Preflight 1/2</a>
+                        <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-simbrief">Simbrief (alone)</a>
+                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-simtoolkitpro">SimToolKitPro</a>
+                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-current-flight-simtoolkitpro">Current Flight under SimToolKitPro</a>
                         <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-preflight2">Preflight 2/2</a>
                         <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-start">Before Start</a>
                         <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-pushback-engine-start">Pushback & Engine Start</a>
@@ -70,7 +70,7 @@
                                 <li class="list-group-item element-primaire">Select the Airframe</li>
                                 <li class="list-group-item titre-et-element-primaire">Optional Entries</li>
                                 <li class="list-group-item element-primaire">Enter an Altitude for a short flight</li>
-                                <li class="list-group-item titre-et-element-primaire">AIRCAC Cycle</li>
+                                <li class="list-group-item titre-et-element-primaire">AIRAC Cycle</li>
                                 <li class="list-group-item element-primaire">The Airac must be 2103</li>
                                 <li class="list-group-item titre-et-element-primaire">Route</li>
                                 <li class="list-group-item element-primaire">Select a suggested routes OR Click View More Route Button</li>
@@ -79,35 +79,41 @@
                                 <li class="list-group-item element-primaire">Generate Flight</li>
                             </ul>
                         </div>
-                        <div class="tab-pane" id="list-cockpit-prepar2">
+                        <div class="tab-pane" id="list-simtoolkitpro">
                             <ul class="list-group">
-                                <li class="list-group-item titre-et-element-primaire">OVERHEAD LEFT (BOTTOM TO TOP)</li>
-                                <li class="list-group-item element-primaire">CREW SUPPLY <kbd>OFF</kbd></li>
-                                <li class="list-group-item element-primaire">GND CTL <kbd>ON</kbd></li>
-                                <li class="list-group-item element-primaire">CVR TEST <kbd>HOLD</kbd></li>
-                                <li class="list-group-item element-primaire list-group-item-danger">ADIRS DATA <kbd>STS</kbd></li>
-                                <li class="list-group-item element-primaire list-group-item-danger">ADIRS SYS <kbd>1</kbd></li>
-                                <li class="list-group-item element-primaire">IR1 & IR2 & IR3 <kbd>NAV</kbd></li>
-                                <li class="list-group-item titre-et-element-primaire">OVERHEAD CENTER (BOTTOM TO TOP)</li>
-                                <li class="list-group-item element-primaire element-lumiere">STROBE <kbd>AUTO</kbd></li>
-                                <li class="list-group-item element-primaire element-lumiere">NAV & LOGO <kbd>1</kbd></li>
-                                <li class="list-group-item element-primaire">NO SMOKING <kbd>AUTO</kbd></li>
-                                <li class="list-group-item element-primaire">EMER EXIT LT <kbd>ARM</kbd> (1 clic)</li>
-                                <li class="list-group-item element-primaire">ANN LT <kbd>TEST</kbd> (and after, 1 clic)</li>
-                                <li class="list-group-item element-primaire">APU FIRE <kbd>TEST</kbd></li>
-                                <li class="list-group-item element-primaire">RADIO PANELS (3x) <kbd>ON</kbd></li>
-                                <li class="list-group-item titre-et-element-primaire">WEATHER RADAR SYSTEM PANEL</li>
-                                <li class="list-group-item element-primaire">MULTISCAN <kbd>AUTO</kbd></li>
-                                <li class="list-group-item element-primaire">GCS <kbd>AUTO</kbd></li>
+                                <li class="list-group-item">Open SimToolKitPro</li>
+                                <li class="list-group-item">Select Flight Scheduled (icône) <i class="fas fa-calendar-alt"></i>&nbsp;&nbsp; à gauche</li>
+                                <li class="list-group-item">Select Real Flights tab</li>
                                 <hr>
-                                <li class="list-group-item titre-et-element-primaire">ECAM SYSTEM CHECK</li>
-                                <li class="list-group-item element-primaire">HYD <kbd>PRESS</kbd> (CHECK HYDRAULIC LEVEL)</li>
-                                <li class="list-group-item element-primaire">ENG <kbd>PRESS</kbd> (CHECK OIL LEVEL)</li>
-                                <li class="list-group-item element-primaire">DOOR <kbd>PRESS</kbd> (OXYGEN LEVEL MUST BE GREEN)</li>
-                                <li class="list-group-item titre-sans-element-primaire">DOING WALK AROUND CHECK</li>
+                                <li class="list-group-item element-lumiere">Wait after entering Filter Data (can be long)</li>
+                                <li class="list-group-item titre-et-element-primaire">Filter by Departure / Arrival</li>
+                                <li class="list-group-item element-primaire">You can enter a Departure airport code And/Or You can enter an Arrival airport code</li>
+                                <li class="list-group-item titre-et-element-primaire">Filter by Operator</li>
+                                <li class="list-group-item element-primaire">You can enter something like "Air canada"</li>
+                                <li class="list-group-item titre-et-element-primaire">Filter by Aircraft type</li>
+                                <li class="list-group-item element-primaire">You can enter something else than ANY AIRCRAFT</li>
+                                <li class="list-group-item titre-et-element-primaire">Sort Result</li>
+                                <li class="list-group-item element-primaire">You can enter something else than Default Sort with Shortest First OR Longest First</li>
+                                <hr>
+                                <li class="list-group-item list-group-item-danger titre-sans-element-primaire">Remembering the Flight Number And Company Code</li>
+                                <li class="list-group-item list-group-item-danger titre-sans-element-primaire">Click to the button: <kbd>Dispatch</kbd></li>
+                                <hr>
+                                <li class="list-group-item titre-et-element-primaire">Entering the dispatch data</li>
+                                <li class="list-group-item element-primaire">Enter the Flight Number and Callsign that you remembered</li>
+                                <li class="list-group-item element-primaire">Change de Depart Time if you want</li>
+                                <li class="list-group-item titre-et-element-primaire">Entering the advanced options</li>
+                                <li class="list-group-item element-primaire">Enter the Number of passenger if you want</li>
+                                <li class="list-group-item element-primaire">Change de Cruise Altitude you want</li>
+                                <hr>
+                                <li class="list-group-item list-group-item-danger titre-sans-element-primaire">Click to the button: <span class="badge bg-success">Generate Plan</span></li>
+                                <hr>
+                                <li class="list-group-item titre-et-element-primaire">Change some data before flying</li>
+                                <li class="list-group-item element-primaire">You can Change the SID and STAR if you want</li>
+                                <hr>
+                                <li class="list-group-item list-group-item-danger titre-sans-element-primaire">Click to the button: <span class="badge bg-primary">Fly Now</span></li>
                             </ul>
                         </div>
-                        <div class="tab-pane" id="list-cockpit-preflight1">
+                        <div class="tab-pane" id="list-current-flight-simtoolkitpro">
                             <ul class="list-group">
                                 <li class="list-group-item titre-et-element-primaire">INSERTING FLIGHT PLAN USING MCDU (FMC)</li>
                                 <li class="list-group-item element-primaire">VIEWING MCDU <kbd>DATA</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-data"><i class="fas fa-keyboard"></i></button></li>
