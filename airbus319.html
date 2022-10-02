@@ -70,8 +70,8 @@
                                 <li class="list-group-item element-primaire">FLAPS <kbd>UP</kbd></li>
                                 <li class="list-group-item element-primaire">WEATHER RADAR SYSTEM PANEL (SYS) & (PWS) <kbd>OFF</kbd></li>
                                 <li class="list-group-item titre-et-element-primaire">OVERHEAD</li>
-                                <li class="list-group-item element-primaire">EXTERIOR POWER <kbd>ON</kbd></li>
-                                <li class="list-group-item element-primaire">BATTERY 1 & 2  <kbd>ON</kbd></li>
+                                <li class="list-group-item element-primaire">EXT PWR <kbd>ON</kbd></li>
+                                <li class="list-group-item element-primaire">BAT 1 & 2  <kbd>ON</kbd></li>
                                 <li class="list-group-item element-primaire">DOME LIGHT <kbd>BRT</kbd> (1 clic)</li>
                                 <hr>
                                 <li class="list-group-item titre-et-element-primaire">GROUND HANDLING</li>
@@ -96,16 +96,9 @@
                                 <li class="list-group-item element-primaire">EMER EXIT LT <kbd>ARM</kbd> (1 clic)</li>
                                 <li class="list-group-item element-primaire">ANN LT <kbd>TEST</kbd> (and after, 1 clic)</li>
                                 <li class="list-group-item element-primaire">APU FIRE <kbd>TEST</kbd></li>
-                                <li class="list-group-item element-primaire">RADIO PANELS (3x) <kbd>ON</kbd></li>
                                 <li class="list-group-item titre-et-element-primaire">WEATHER RADAR SYSTEM PANEL</li>
                                 <li class="list-group-item element-primaire">MULTISCAN <kbd>AUTO</kbd></li>
                                 <li class="list-group-item element-primaire">GCS <kbd>AUTO</kbd></li>
-                                <hr>
-                                <li class="list-group-item titre-et-element-primaire">ECAM SYSTEM CHECK</li>
-                                <li class="list-group-item element-primaire">HYD <kbd>PRESS</kbd> (CHECK HYDRAULIC LEVEL)</li>
-                                <li class="list-group-item element-primaire">ENG <kbd>PRESS</kbd> (CHECK OIL LEVEL)</li>
-                                <li class="list-group-item element-primaire">DOOR <kbd>PRESS</kbd> (OXYGEN LEVEL MUST BE GREEN)</li>
-                                <li class="list-group-item titre-sans-element-primaire">DOING WALK AROUND CHECK</li>
                             </ul>
                         </div>
                         <div class="tab-pane" id="list-cockpit-preflight1">
@@ -132,10 +125,10 @@
                             <ul class="list-group">
                                 <li class="list-group-item">SEATBELTS <kbd>ON</kbd></li>
                                 <li class="list-group-item">FUEL PUMPS (6) <kbd>ON</kbd></li>
-                                <li class="list-group-item">APU MASTER <kbd>ON</kbd></li>
-                                <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL FLAPS OPEN (ECAM APU)")</li>
+                                <li class="list-group-item">APU MASTER SW <kbd>ON</kbd></li>
+                                <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL FLAP OPEN (LOWER ECAM)")</li>
                                 <li class="list-group-item">APU START <kbd>ON</kbd></li>
-                                <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL AVAIL (ECAM APU)")</li>
+                                <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL APU AVAIL (UPPER ECAM)")</li>
                             </ul>
                         </div>
                         <div class="tab-pane" id="list-before-start">
@@ -162,7 +155,7 @@
                                 <li class="list-group-item titre-et-element-primaire">BEFORE PUSHBACK</li>
                                 <li class="list-group-item element-primaire element-lumiere">BEACON <kbd>ON</kbd></li>
                                 <li class="list-group-item element-primaire">APU BLEED <kbd>ON</kbd></li>
-                                <li class="list-group-item element-primaire">EXTERIOR POWER <kbd>OFF</kbd></li>
+                                <li class="list-group-item element-primaire">EXT PWR <kbd>OFF</kbd></li>
                                 <li class="list-group-item element-primaire">RADIO <kbd>MECH</kbd> EXT PWR <kbd>OFF</kbd></li>
                                 <li class="list-group-item titre-et-element-primaire">ATC TCAS PANEL</li>
                                 <li class="list-group-item element-primaire">TRANSPONDER <kbd>ON</kbd></li>
@@ -183,16 +176,16 @@
                         </div>
                         <div class="tab-pane" id="list-after-start">
                             <ul class="list-group">
-                                <li class="list-group-item">ENGINE MODE <kbd>NORM</kbd></li>
+                                <li class="list-group-item">ENG MODE <kbd>NORM</kbd></li>
                                 <li class="list-group-item">SPEED BRAKE <kbd>ARM</kbd></li>
                                 <li class="list-group-item">FLAPS <kbd>SET FOR TAKOFF</kbd></li>
                                 <li class="list-group-item">APU BLEED <kbd>OFF</kbd></li>
-                                <li class="list-group-item">APU MASTER <kbd>OFF</kbd></li>
+                                <li class="list-group-item">APU MASTER SW <kbd>OFF</kbd></li>
                                 <hr>
                                 <li class="list-group-item titre-et-element-primaire">ECAM F/CTL MENU</li>
                                 <li class="list-group-item element-primaire">FLIGHT CONTROL <kbd>CHECK</kbd></li>
                                 <hr>
-                                <li class="list-group-item">AUTO BRAKE <kbd>MAX</kbd></li>
+                                <li class="list-group-item">AUTO/BRK <kbd>MAX</kbd></li>
                                 <li class="list-group-item">T.O CONFIG <kbd>PUSH</kbd></li>
                                 <hr>
                                 <li class="list-group-item titre-et-element-primaire">WEATHER RADAR SYSTEM PANEL</li>
@@ -207,7 +200,7 @@
                         </div>
                         <div class="tab-pane" id="list-before-taxi">
                             <ul class="list-group">
-                                <li class="list-group-item element-lumiere">RUNWAY TURN <kbd>ON</kbd></li>
+                                <li class="list-group-item element-lumiere">RWY TURN OFF <kbd>ON</kbd></li>
                                 <li class="list-group-item element-lumiere">NOSE LIGHT <kbd>TAXI</kbd></li>
                                 <li class="list-group-item titre-sans-element-primaire">CALL FOLOW ME CAR</li>
                                 <li class="list-group-item titre-sans-element-primaire">TAXING RUNWAY <kbd>20 KNOTS</kbd></li>
@@ -226,7 +219,7 @@
                                 <li class="list-group-item">THROTTLE N1 <kbd>50%</kbd></li>
                                 <li class="list-group-item">PARKING BRAKE <kbd>RELEASE</kbd></li>
                                 <li class="list-group-item">THROTTLE N1 <kbd>FLEX/TOGA</kbd></li>
-                                <li class="list-group-item titre-sans-element-primaire important">JOYSTICK DOWN UNTIL 80KTS; NEUTRAL AT 100KTS</li>
+                                <li class="list-group-item titre-sans-element-primaire important">JOYSTICK DOWN UNTIL 80KTS; NEUTRAL AT 100KTS</li>8
                                 <hr>
                                 <li class="list-group-item titre-et-element-primaire">VR - POSITIVE RATE</li>
                                 <li class="list-group-item element-primaire">LANDING GEAR <kbd>UP</kbd></li>
@@ -238,7 +231,7 @@
                                 <hr>
                                 <li class="list-group-item">FCU AP1 <kbd>ON</kbd></li>
                                 <li class="list-group-item">ECAM CRUISE (TAT) -> 10°C (CLOUDY) <kbd>ENG ICE ON</kbd></li>
-                                <li class="list-group-item element-lumiere">RUNWAY TURN <kbd>OFF</kbd></li>
+                                <li class="list-group-item element-lumiere">RWY TURN OFF <kbd>OFF</kbd></li>
                                 <li class="list-group-item element-lumiere">NOSE LIGHT <kbd>OFF</kbd></li>
                             </ul>
                         </div>
@@ -295,6 +288,7 @@
                                 <li class="list-group-item element-primaire">FLAPS <kbd>2</kbd></li>
                                 <li class="list-group-item element-primaire">LANDING GEAR <kbd>DOWN</kbd></li>
                                 <li class="list-group-item element-primaire">SPEED BRAKE <kbd>ARMED</kbd></li>
+                                <li class="list-group-item element-primaire element-lumiere">RWY TURN OFF <kbd>ON</kbd></li>
                                 <li class="list-group-item element-primaire element-lumiere">NOSE LIGHT <kbd>T.O</kbd></li>
                                 <li class="list-group-item titre-et-element-primaire">F-SPEED (PFD)</li>
                                 <li class="list-group-item element-primaire">FLAPS <kbd>3</kbd></li>
@@ -330,9 +324,10 @@
                                 <li class="list-group-item">FLAPS <kbd>UP</kbd></li>
                                 <li class="list-group-item element-lumiere">STROBE <kbd>OFF</kbd></li>
                                 <li class="list-group-item element-lumiere">LAND <kbd>OFF</kbd></li>
-                                <li class="list-group-item list-group-item-danger">APU MASTER <kbd>ON</kbd></li>
-                                <li class="list-group-item list-group-item-danger"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL FLAPS OPEN (ECAM APU)")</li>
+                                <li class="list-group-item list-group-item-danger">APU MASTER SW <kbd>ON</kbd></li>
+                                <li class="list-group-item list-group-item-danger"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL FLAP OPEN (LOWER ECAM)")</li>
                                 <li class="list-group-item list-group-item-danger">APU START <kbd>ON</kbd></li>
+                                <li class="list-group-item list-group-item-danger"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL APU AVAIL (UPPER ECAM)")</li>                                
                             </ul>
                         </div>
                         <div class="tab-pane" id="list-parking">
@@ -341,7 +336,7 @@
                                 <li class="list-group-item">RADIO <kbd>MECH</kbd> CHOCKS <kbd>ADD</kbd></li>
                                 <li class="list-group-item">RADIO <kbd>MECH</kbd> EXT PWR <kbd>ADD</kbd></li>
                                 <hr>
-                                <li class="list-group-item">EXTERIOR POWER <kbd>ON</kbd></li>
+                                <li class="list-group-item">EXT PWR <kbd>ON</kbd></li>
                                 <li class="list-group-item">APU BLEED <kbd>ON</kbd></li>
                                 <li class="list-group-item">ENGINE 1 <kbd>OFF</kbd></li>
                                 <li class="list-group-item">ENGINE 2 <kbd>OFF</kbd></li>
@@ -351,7 +346,7 @@
                                 <li class="list-group-item element-primaire">TCAS MODE SELECTOR <kbd>STBY</kbd></li>
                                 <li class="list-group-item titre-et-element-primaire">OVERHEAD</li>
                                 <li class="list-group-item element-primaire element-lumiere">BEACON <kbd>OFF</kbd></li>
-                                <li class="list-group-item element-primaire element-lumiere">RUNWAY TURN <kbd>OFF</kbd></li>
+                                <li class="list-group-item element-primaire element-lumiere">RWY TURN OFF <kbd>OFF</kbd></li>
                                 <li class="list-group-item element-primaire element-lumiere">NOSE LIGHT <kbd>OFF</kbd></li>
                                 <li class="list-group-item element-primaire">SEATBELTS <kbd>OFF</kbd></li>
                                 <li class="list-group-item element-primaire">FUEL PUMPS (6) <kbd>OFF</kbd></li>
@@ -373,7 +368,7 @@
                                 <hr>
                                 <li class="list-group-item titre-et-element-primaire"> WHEN PASSENGERS ARE GONES</li>
                                 <li class="list-group-item element-primaire">APU BLEED <kbd>OFF</kbd></li>
-                                <li class="list-group-item element-primaire">APU MASTER <kbd>OFF</kbd></li>
+                                <li class="list-group-item element-primaire">APU MASTER SW <kbd>OFF</kbd></li>
                                 <li class="list-group-item element-primaire">APU START <kbd>OFF</kbd></li>
                                 <li class="list-group-item element-primaire">BATTERY 1 & 2 <kbd>OFF</kbd></li>
                                 <li class="list-group-item element-primaire">EXTERIOR POWER <kbd>OFF</kbd></li>
@@ -454,7 +449,7 @@
                             <li class="list-group-item">Sélectionnez LUGE3N dans la liste des SIDS puis cliquez sur le bouton à sa gauche (cliquez NO SID si pas de SID)</li>
                             <li class="list-group-item">cliquez sur le bouton à droite de NONE (aucune transition, sinon choisir une transition)</li>
                             <li class="list-group-item">cliquez sur le bouton à gauche de F-PLN (pour insérer les informations dans un mode temporaire)</li>
-                            <li class="list-group-item">cliquez sur le bouton à droite de INSERT* (pour insérer les informations dans le MCDU)</li>
+                            <li class="list-group-item">cliquez sur le bouton à droite de TMPY INSERT* (pour insérer les informations dans le MCDU)</li>
                         </ul>
                     </div>
                     <div class="modal-footer">
@@ -520,7 +515,7 @@
                                 <li class="list-group-item">Tapez CNA et cliquez sur le bouton à droite de TO</li>
                                 <li class="list-group-item">Tapez UN863 et cliquez sur le bouton à gauche de VIA</li>
                                 <li class="list-group-item">Tapez SECHE et cliquez sur le bouton à droite de TO</li>
-                                <li class="list-group-item">cliquez sur le bouton à droite de INSERT* (pour insérer les informations dans le MCDU)</li>
+                                <li class="list-group-item">cliquez sur le bouton à droite de TMPY INSERT* (pour insérer les informations dans le MCDU)</li>
                                 <hr>
                                 <li class="list-group-item titre-et-element-primaire">POUR ENLEVER UN AIRWAYS OU UN ITEM</li>
                                 <li class="list-group-item">Appuyez sur le bouton <kbd>CLR</kbd></li>
@@ -690,6 +685,7 @@
                                     <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL TAKE OFF DATA UPLINK")</li>
                                     <li class="list-group-item">Cliquez sur le bouton à gauche de TO DATA</li>
                                     <li class="list-group-item">Cliquez sur le bouton à droite de INSERT UPLINK*</li>
+                                    <li class="list-group-item list-group-item-danger">VERIFIER le TRANS ALT</li>
                                     <hr>
                                     <li class="list-group-item titre-et-element-primaire">APPR PAGE</li>
                                     <li class="list-group-item"><code>EXEMPLE DE RAPPORT MÉTÉO: 262100Z 27007KT CAVOK 08/03
