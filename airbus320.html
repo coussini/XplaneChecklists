@@ -63,7 +63,8 @@
                             <li class="list-group-item element-primaire list-group-item-danger">SELECT RIGHT LIVERY</li>
                             <hr>
                             <li class="list-group-item titre-et-element-primaire">EFB FENIX / MY FLIGHT TAB</li>
-                            <li class="list-group-item element-primaire">OPEN THE FENIX TAB / TAP TO IMPORT SIMBRIEF</li>
+                            <li class="list-group-item element-primaire titre-sans-element-primaire">OPEN THE IPAD FENIX PAGE</li>
+                            <li class="list-group-item element-primaire">TAP TO IMPORT SIMBRIEF</li>
                             <li class="list-group-item element-primaire">THE FIRST FLOATING WINDOW FOR FLIGHT SCHEDULING</li>
                             <li class="list-group-item element-primaire">CLICK THE NEXT FLOATING WINDOW FOR WEATHER (DEP, ARR & ALTN)</li>
                             <li class="list-group-item element-primaire">CLICK THE NEXT FLOATING WINDOW FOR ROUTE</li>
@@ -85,9 +86,9 @@
                             <li class="list-group-item element-primaire">WEATHER RADAR SYSTEM PANEL (SYS) & (PWS) <kbd>OFF</kbd></li>
                             <hr>
                             <li class="list-group-item titre-et-element-primaire">INSTRUMENT PANEL (LIGHTS)</li>
-                            <li class="list-group-item element-primaire">CPT PFD & ND <kbd>BRT</kbd></li>
-                            <li class="list-group-item element-primaire">CO-PI PFD & ND <kbd>BRT</kbd></li>
-                            <li class="list-group-item element-primaire">ECAM UPPER AND LOWER <kbd>BRT</kbd></li>
+                            <li class="list-group-item element-primaire list-group-item-danger">CPT PFD & ND <kbd>BRT</kbd></li>
+                            <li class="list-group-item element-primaire list-group-item-danger">CO-PI PFD & ND <kbd>BRT</kbd></li>
+                            <li class="list-group-item element-primaire list-group-item-danger">ECAM UPPER AND LOWER <kbd>BRT</kbd></li>
                             <li class="list-group-item element-primaire">MCDU LEFT & RIGHT <kbd>BRT</kbd></li>
                             <li class="list-group-item titre-et-element-primaire">OVERHEAD</li>
                             <li class="list-group-item element-primaire">BAT 1 & 2  <kbd>ON</kbd></li>
@@ -113,15 +114,15 @@
                             <li class="list-group-item element-primaire">ANN LT <kbd>TEST</kbd> (and after, 1 clic)</li>
                             <li class="list-group-item element-primaire">APU FIRE <kbd>TEST</kbd></li>
                             <li class="list-group-item titre-et-element-primaire">WEATHER RADAR SYSTEM PANEL</li>
-                            <li class="list-group-item element-primaire">MULTISCAN <kbd>AUTO</kbd> (SI PAS FAT)</li>
+                            <li class="list-group-item element-primaire">MULTISCAN <kbd>AUTO</kbd> (IF NOT DONE)</li>
                             <li class="list-group-item element-primaire">GCS <kbd>AUTO</kbd></li>
                         </ul>
                     </div>
                     <div class="tab-pane" id="list-cockpit-preflight1">
                         <ul class="list-group">
-                            <li class="list-group-item titre-et-element-primaire">INSERTING FLIGHT PLAN USING MCDU (FMC) <span class="tresimportant titre-fonce">(FAIRE CMD-ALT SUR LE EFB (POUR SAISIES MCDU))</span></li>
+                            <li class="list-group-item titre-et-element-primaire">INSERTING FLIGHT PLAN USING MCDU (FMC)</li>
                             <li class="list-group-item element-primaire">VIEWING MCDU <kbd>DATA</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-data"><i class="fas fa-keyboard"></i></button></li>
-                            <li class="list-group-item element-primaire">INSERTING MCDU <kbd>INIT</kbd> <kbd>A</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-inita"><i class="fas fa-keyboard"></i></button></li>
+                            <li class="list-group-item element-primaire">INSERTING MAJOR DATA FROM SIMBRIEF</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-from-simbrief"><i class="fas fa-keyboard"></i></button></li>
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>F-PLN</kbd> DEPARTURE<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-fpln-departure"><i class="fas fa-keyboard"></i></button></li>
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>F-PLN</kbd> WAYPOINTS<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-fpln-waypoints"><i class="fas fa-keyboard"></i></button></li>
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>F-PLN</kbd> AIRWAYS<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-fpln-airways"><i class="fas fa-keyboard"></i></button></li>
@@ -149,7 +150,6 @@
                     </div>
                     <div class="tab-pane" id="list-before-start">
                         <ul class="list-group">
-                            <li class="list-group-item titre-sans-element-primaire">IN AVITAB, SEARCH FOR THE DEPARTURE AIRPORT ATIS FREQ</li>
                             <li class="list-group-item">ATIS FREQ ON RADIO  <kbd>SET</kbd></li>
                             <li class="list-group-item">BARO DEPARTURE <kbd>SET</kbd></li>
                             <li class="list-group-item">VHF1 BUTTON <kbd>OFF</kbd> (NO WHITE)</li>
@@ -415,20 +415,27 @@
             </div>
         </div>
     </div>
-    <!--    modal insert MCDU (INIT A) data -->                     
-    <div class="modal" id="modal-enter-mcdu-inita" tabindex="-1">
+    <!--    modal Inserting Major Data From Simbrief -->                     
+    <div class="modal" id="modal-enter-mcdu-from-simbrief" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">INSERTING MCDU (INIT) A</h5>
+                    <h5 class="modal-title">INSERTING MAJOR DATA FROM SIMBRIEF</h5>
                 </div>
                 <div class="modal-body">
                     <ul class="list-group">
                         <li class="list-group-item titre-et-element-primaire">IMPORTATION DU PLAN DE VOL DE SIMBRIEF VIA LE MDCU</li>
-                        <li class="list-group-item">Cliquez sur le bouton <kbd>INIT</kbd> <kbd>A</kbd></li>
+                        <li class="list-group-item">Cliquez sur le bouton <kbd>MCDU MENU</kbd></li>
+                        <li class="list-group-item">Cliquez sur le bouton à gauche de ATSU</li>
+                        <li class="list-group-item">Cliquez sur le bouton à droite de AOC MENU</li>
+                        <li class="list-group-item">Cliquez sur le bouton à gauche de FLT INIT</li>
+                        <li class="list-group-item">Cliquez sur le bouton à droite de INIT DATA REQ*s</li>
+                        <li class="list-group-item">Cliquez sur le bouton <kbd>INIT A</kbd></li>
                         <li class="list-group-item">Cliquez sur le bouton à droite de INIT REQUEST*</li>
                         <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL F-PLN DATALINK IN PROG")</li>
                         <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL AOC ACT F-PLN UPLINK")</li>
+                        <li class="list-group-item titre-et-element-primaire">INSERT OTHER DATA</li>
+                        <li class="list-group-item">INSERT THE FLT NBR, COST INDEX & CRZ FL FROM <kbd>FENIX</kbd> <kbd>EFB</kbd></li>
                         <li class="list-group-item titre-et-element-primaire">INITIALISER LES IRS</li>
                         <li class="list-group-item">Cliquez sur le bouton à droite de ALIGN IRS</li>
                         <li class="list-group-item titre-et-element-primaire">REQUEST WIND</li>
@@ -652,7 +659,9 @@
                 </div>
                 <div class="modal-body">
                     <ul class="list-group">
-                        <li class="list-group-item">Vérifier que les données sont entrées</li>
+                        <li class="list-group-item titre-et-element-primaire">IMPORTATION DES DONNEES ZFW/ZFWCG et BLOCK</li>
+                        <li class="list-group-item list-group-item-danger">ATTENDRE QUE LE BOARDING SOIT COMPLÉTÉ</li>
+                        <li class="list-group-item">OUVRIR LE <kbd>FENIX</kbd> <kbd>EFB</kbd> MASS AND BALANCE</li>
                     </ul>
                 </div>
                 <div class="modal-footer">
