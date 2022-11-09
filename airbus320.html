@@ -36,9 +36,9 @@
                     <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-simulation-preparation">Simulation Preparation</a>
                     <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar1">Cockpit Preparation 1/2</a>
                     <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar2">Cockpit Preparation 2/2</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-preflight1">Preflight 1/2</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-preflight2">Preflight 2/2</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-start">Before Start</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-preflight">Preflight</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-start1">Before Start 1/2</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-start2">Before Start 2/2</a>
                     <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-pushback-engine-start">Pushback & Engine Start</a>
                     <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-after-start">After Start</a>
                     <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-taxi">Before Taxi</a>
@@ -115,7 +115,7 @@
                             <li class="list-group-item element-primaire">GCS <kbd>AUTO</kbd></li>
                         </ul>
                     </div>
-                    <div class="tab-pane" id="list-cockpit-preflight1">
+                    <div class="tab-pane" id="list-cockpit-preflight">
                         <ul class="list-group">
                             <li class="list-group-item titre-et-element-primaire">INSERTING FLIGHT PLAN USING MCDU (FMC)</li>
                             <li class="list-group-item element-primaire">VIEWING MCDU <kbd>DATA</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-data"><i class="fas fa-keyboard"></i></button></li>
@@ -127,42 +127,52 @@
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>F-PLN</kbd> VALIDATION<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-fpln-validation"><i class="fas fa-keyboard"></i></button></li>
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>SEC F-PLN</kbd> COPY PRIMARY F-PLN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-secfpln"><i class="fas fa-keyboard"></i></button></li>
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>RAD NAV</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-radnav"><i class="fas fa-keyboard"></i></button></li>
-                            <li class="list-group-item element-primaire">INSERTING MCDU <kbd>INIT</kbd> <kbd>B</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-initb"><i class="fas fa-keyboard"></i></button></li>
-                            <li class="list-group-item element-primaire">INSERTING MCDU <kbd>PROG</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-prog"><i class="fas fa-keyboard"></i></button></li>
-                            <li class="list-group-item element-primaire">INSERTING MCDU <kbd>PERF</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-perf"><i class="fas fa-keyboard"></i></button></li>
-                            <hr>
-                            <li class="list-group-item titre-et-element-primaire">MANAGING FLIGHT PLAN</li>
-                            <li class="list-group-item element-primaire">SAVING AND LOADING FMS FLIGHT PLAN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-managing-flight-plan"><i class="fas fa-keyboard"></i></button></li>
+                            <li class="list-group-item titre-et-element-primaire">OVERHEAD</li>
+                            <li class="list-group-item element-primaire">SEAT BELTS <kbd>ON</kbd></li>
+                            <li class="list-group-item element-primaire">FUEL PUMPS (6) <kbd>ON</kbd></li>
+                            <li class="list-group-item element-primaire">APU MASTER SW <kbd>ON</kbd></li>
+                            <li class="list-group-item element-primaire"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL FLAP OPEN (LOWER ECAM)")</li>
+                            <li class="list-group-item element-primaire">APU START <kbd>ON</kbd></li>
+                            <li class="list-group-item element-primaire"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL APU AVAIL (UPPER ECAM)")</li>
                         </ul>
                     </div>
-                    <div class="tab-pane" id="list-cockpit-preflight2">
-                        <ul class="list-group">
-                            <li class="list-group-item">SEAT BELTS <kbd>ON</kbd></li>
-                            <li class="list-group-item">FUEL PUMPS (6) <kbd>ON</kbd></li>
-                            <li class="list-group-item">APU MASTER SW <kbd>ON</kbd></li>
-                            <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL FLAP OPEN (LOWER ECAM)")</li>
-                            <li class="list-group-item">APU START <kbd>ON</kbd></li>
-                            <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL APU AVAIL (UPPER ECAM)")</li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane" id="list-before-start">
+                    <div class="tab-pane" id="list-before-start1">
                         <ul class="list-group">
                             <li class="list-group-item titre-et-element-primaire">FINDING METAR FOR DEPARTURE</li>
-                            <li class="list-group-item">Cliquez sur le bouton <kbd>MCDU MENU</kbd></li>
-                            <li class="list-group-item">Cliquez sur le bouton à gauche de ATSU / AOC MENU / WX / WEATHER REQ</li>
-                            <li class="list-group-item">Saisir l'ident de l'aéroport</li>
-                            <li class="list-group-item">Cliquez à gauche de METAR / SEND* / MESSAGE*</li>
-                            <li class="list-group-item">Cliquez sur le bouton <kbd>MCDU MENU</kbd></li>
-                            <li class="list-group-item">Cliquez sur le bouton à gauche de ATSU / AOC MENU / RCVD MSGS</li>
-                            <li class="list-group-item">Cliquez à gauche de WEATHER DATA.</li>
+                            <li class="list-group-item element-primaire">Cliquez sur le bouton <kbd>MCDU MENU</kbd></li>
+                            <li class="list-group-item element-primaire">Cliquez sur le bouton à gauche de ATSU / AOC MENU / WX / WEATHER REQ</li>
+                            <li class="list-group-item element-primaire">Saisir l'ident de l'aéroport</li>
+                            <li class="list-group-item element-primaire">Cliquez à gauche de METAR / SEND* / MESSAGE*</li>
+                            <li class="list-group-item element-primaire">Cliquez sur le bouton <kbd>MCDU MENU</kbd></li>
+                            <li class="list-group-item element-primaire">Cliquez sur le bouton à gauche de ATSU / AOC MENU / RCVD MSGS</li>
+                            <li class="list-group-item element-primaire">Cliquez à gauche de WEATHER DATA.</li>
+                            <hr>
                             <li class="list-group-item">BARO DEPARTURE <kbd>SET</kbd></li>
                             <li class="list-group-item">VHF1 BUTTON <kbd>OFF</kbd> (NO WHITE)</li>
                             <li class="list-group-item">ALTITUDE <kbd>SET</kbd></li>
                             <li class="list-group-item">FCU CSTR <kbd>ON</kbd></li>
                             <li class="list-group-item">FCU MODE SELECT <kbd>ARC</kbd></li>
                             <li class="list-group-item">FCU ZOOM SELECT <kbd>20</kbd></li>
+                            <li class="list-group-item list-group-item-danger"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL BORDING IS COMPLETED")</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="list-before-start2">
+                        <ul class="list-group">
+                            <li class="list-group-item titre-et-element-primaire">OPEN THE EFB DEPARTURE PERF</li>
+                            <li class="list-group-item element-primaire">Select the Departure Runway</li>
+                            <li class="list-group-item element-primaire">Select the Runway Surface</li>
+                            <li class="list-group-item element-primaire">Select the Flap Config</li>
+                            <li class="list-group-item element-primaire">Click <span class="badge bg-success">SYNC LIVE WX</span></li>
+                            <li class="list-group-item element-primaire">On the right, Select VIEW INTERSECTION DATA</li>
+                            <li class="list-group-item element-primaire">Click <span class="badge bg-success">SYNC LOADSHEET (FINAL)</span></li>
                             <hr>
-                            <li class="list-group-item titre-et-element-primaire">DOORS & GROUND HANDLING</li>
+                            <li class="list-group-item titre-et-element-primaire">CONTINUING ENTERING MCDU DATA</li>
+                            <li class="list-group-item element-primaire">INSERTING MCDU <kbd>INIT</kbd> <kbd>B</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-initb"><i class="fas fa-keyboard"></i></button></li>
+                            <li class="list-group-item element-primaire">INSERTING MCDU <kbd>PROG</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-prog"><i class="fas fa-keyboard"></i></button></li>
+                            <li class="list-group-item element-primaire">INSERTING MCDU <kbd>PERF</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-perf"><i class="fas fa-keyboard"></i></button></li>
+                            <hr>
+                            <li class="list-group-item titre-et-element-primaire">MANAGING FLIGHT PLAN</li>
+                            <li class="list-group-item element-primaire">SAVING AND LOADING FMS FLIGHT PLAN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-managing-flight-plan"><i class="fas fa-keyboard"></i></button></li>
                         </ul>
                     </div>
                     <div class="tab-pane" id="list-pushback-engine-start">
@@ -652,8 +662,6 @@
                 <div class="modal-body">
                     <ul class="list-group">
                         <li class="list-group-item titre-et-element-primaire">IMPORTATION DES DONNEES ZFW/ZFWCG et BLOCK</li>
-                        <li class="list-group-item list-group-item-danger">ATTENDRE QUE LE BOARDING SOIT COMPLÉTÉ ET LE LOADSHEET FINAL</li>
-                        <li class="list-group-item list-group-item-danger">LE LOADSHEET FINAL APPARAIT ENVIRON 4 MIN APRES LE BORDING COMPLETE</li>
                         <li class="list-group-item">Cliquez sur le bouton <kbd>MCDU MENU</kbd></li>
                         <li class="list-group-item">Cliquez sur le bouton à gauche de ATSU</li>
                         <li class="list-group-item">Cliquez sur le bouton à droite de AOC MENU</li>
