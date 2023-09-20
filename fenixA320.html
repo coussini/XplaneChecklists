@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Checklists pour X-Plane 12</title>
+    <title>Checklists pour MSFS 2020</title>
     <meta charset="UTF-8">
     <meta name="Content-Type" content="UTF-8">
     <meta name="Content-Language" content="fr">
@@ -24,7 +24,7 @@
     <!--end of Navigation bar-->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="text-center text-muted">Toliss <small>A320</small></h1>
+            <h1 class="text-center text-muted">Fenix <small>A320 (FS2020)</small></h1>
         </div>
     </div>
     <!--Copier le modèle vierge ici-->  
@@ -33,11 +33,12 @@
             <div class="col-4">
                 <h1 class="text-muted">Checklist</h1>
                 <div class="list-group defile" id="list-tab">
-                    <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-cockpit-prepar1">Cockpit Preparation 1/2</a>
+                    <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-simulation-preparation">Simulation Preparation</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar1">Cockpit Preparation 1/2</a>
                     <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar2">Cockpit Preparation 2/2</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-preflight1">Preflight 1/2</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-preflight2">Preflight 2/2</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-start">Before Start</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-preflight">Preflight</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-start1">Before Start 1/2</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-start2">Before Start 2/2</a>
                     <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-pushback-engine-start">Pushback & Engine Start</a>
                     <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-after-start">After Start</a>
                     <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-taxi">Before Taxi</a>
@@ -56,11 +57,25 @@
             <div class="col-8">
                 <h1 class="text-muted">Items</h1>
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane active show" id="list-cockpit-prepar1">
+                    <div class="tab-pane active show" id="list-simulation-preparation">
                         <ul class="list-group">
-                            <li class="list-group-item titre-et-element-primaire">X-PLANE 12</li>
+                            <li class="list-group-item titre-et-element-primaire">MSFS 2020</li>
                             <li class="list-group-item element-primaire list-group-item-danger">SELECT RIGHT LIVERY</li>
                             <hr>
+                            <li class="list-group-item titre-et-element-primaire">EFB FENIX / MY FLIGHT TAB</li>
+                            <li class="list-group-item element-primaire titre-sans-element-primaire">OPEN THE IPAD FENIX PAGE</li>
+                            <li class="list-group-item element-primaire">TAP TO IMPORT SIMBRIEF</li>
+                            <li class="list-group-item element-primaire">THE FIRST FLOATING WINDOW FOR FLIGHT SCHEDULING</li>
+                            <li class="list-group-item element-primaire">CLICK THE NEXT FLOATING WINDOW FOR WEATHER (DEP, ARR & ALTN)</li>
+                            <li class="list-group-item element-primaire">CLICK THE NEXT FLOATING WINDOW FOR ROUTE</li>
+                            <li class="list-group-item titre-et-element-primaire">EFB FENIX / GROUND SERVICES TAB</li>
+                            <li class="list-group-item element-primaire">TOGGLE JETWAY, GPU... ETC</li>
+                            <li class="list-group-item titre-et-element-primaire">EFB FENIX / MASS AND BALANCE TAB</li>
+                            <li class="list-group-item element-primaire">CLICK LOAD AIRCRAFT BUTTON (CONFIRM LOADING IN REAL TIME)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="list-cockpit-prepar1">
+                        <ul class="list-group">
                             <li class="list-group-item titre-et-element-primaire">PEDESTAL (optionnal)</li>
                             <li class="list-group-item element-primaire">LANDING GEAR <kbd>DOWN</kbd></li>
                             <li class="list-group-item element-primaire list-group-item-danger">PARKING BRAKE <kbd>SET</kbd></li>
@@ -69,15 +84,12 @@
                             <li class="list-group-item element-primaire">SPEED BRAKE <kbd>RETRACTED-DISARMED</kbd></li>
                             <li class="list-group-item element-primaire">FLAPS <kbd>UP</kbd></li>
                             <li class="list-group-item element-primaire">WEATHER RADAR SYSTEM PANEL (SYS) & (PWS) <kbd>OFF</kbd></li>
-                            <li class="list-group-item titre-et-element-primaire">OVERHEAD</li>
-                            <li class="list-group-item element-primaire">EXT PWR <kbd>ON</kbd></li>
-                            <li class="list-group-item element-primaire">BAT 1 & 2  <kbd>ON</kbd></li>
-                            <li class="list-group-item element-primaire">DOME LIGHT <kbd>BRT</kbd> (1 clic)</li>
                             <hr>
-                            <li class="list-group-item titre-et-element-primaire">GROUND HANDLING</li>
-                            <li class="list-group-item element-primaire titre-sans-element-primaire">OPEN THE GROUND HANDLING MENU / SELECT SERVICES</li>
-                            <li class="list-group-item element-primaire">RADIO <kbd>ATT</kbd> (OPENS DOORS DEPENDING SITUATION)</li>
-                            <li class="list-group-item element-primaire">RADIO <kbd>MECH</kbd> (OPENS CARGO DOORS DEPENDING SITUATION)</li>
+                            <li class="list-group-item titre-et-element-primaire">INSTRUMENT PANEL (LIGHTS)</li>
+                            <li class="list-group-item element-primaire">MCDU LEFT & RIGHT <kbd>BRT</kbd></li>
+                            <li class="list-group-item titre-et-element-primaire">OVERHEAD</li>
+                            <li class="list-group-item element-primaire">BAT 1 & 2  <kbd>ON</kbd></li>
+                            <li class="list-group-item element-primaire">EXT PWR <kbd>ON</kbd></li>
                         </ul>
                     </div>
                     <div class="tab-pane" id="list-cockpit-prepar2">
@@ -94,18 +106,20 @@
                             <li class="list-group-item element-primaire element-lumiere">NAV & LOGO <kbd>1</kbd></li>
                             <li class="list-group-item element-primaire">NO SMOKING <kbd>AUTO</kbd></li>
                             <li class="list-group-item element-primaire">EMER EXIT LT <kbd>ARM</kbd> (1 clic)</li>
+                            <li class="list-group-item element-primaire">OVHD INTEG LT <kbd>BRT</kbd></li>
+                            <li class="list-group-item element-primaire">INT LT DOME <kbd>BRT</kbd></li>
                             <li class="list-group-item element-primaire">ANN LT <kbd>TEST</kbd> (and after, 1 clic)</li>
                             <li class="list-group-item element-primaire">APU FIRE <kbd>TEST</kbd></li>
                             <li class="list-group-item titre-et-element-primaire">WEATHER RADAR SYSTEM PANEL</li>
-                            <li class="list-group-item element-primaire">MULTISCAN <kbd>AUTO</kbd></li>
+                            <li class="list-group-item element-primaire">MULTISCAN <kbd>AUTO</kbd> (IF NOT DONE)</li>
                             <li class="list-group-item element-primaire">GCS <kbd>AUTO</kbd></li>
                         </ul>
                     </div>
-                    <div class="tab-pane" id="list-cockpit-preflight1">
+                    <div class="tab-pane" id="list-cockpit-preflight">
                         <ul class="list-group">
                             <li class="list-group-item titre-et-element-primaire">INSERTING FLIGHT PLAN USING MCDU (FMC)</li>
                             <li class="list-group-item element-primaire">VIEWING MCDU <kbd>DATA</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-data"><i class="fas fa-keyboard"></i></button></li>
-                            <li class="list-group-item element-primaire">INSERTING MCDU <kbd>INIT</kbd> <kbd>A</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-inita"><i class="fas fa-keyboard"></i></button></li>
+                            <li class="list-group-item element-primaire">INSERTING MAJOR DATA FROM SIMBRIEF</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-from-simbrief"><i class="fas fa-keyboard"></i></button></li>
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>F-PLN</kbd> DEPARTURE<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-fpln-departure"><i class="fas fa-keyboard"></i></button></li>
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>F-PLN</kbd> WAYPOINTS<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-fpln-waypoints"><i class="fas fa-keyboard"></i></button></li>
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>F-PLN</kbd> AIRWAYS<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-fpln-airways"><i class="fas fa-keyboard"></i></button></li>
@@ -113,6 +127,46 @@
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>F-PLN</kbd> VALIDATION<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-fpln-validation"><i class="fas fa-keyboard"></i></button></li>
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>SEC F-PLN</kbd> COPY PRIMARY F-PLN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-secfpln"><i class="fas fa-keyboard"></i></button></li>
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>RAD NAV</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-radnav"><i class="fas fa-keyboard"></i></button></li>
+                            <li class="list-group-item titre-et-element-primaire">OVERHEAD</li>
+                            <li class="list-group-item element-primaire">SEAT BELTS <kbd>ON</kbd></li>
+                            <li class="list-group-item element-primaire">FUEL PUMPS (6) <kbd>ON</kbd></li>
+                            <li class="list-group-item element-primaire">APU MASTER SW <kbd>ON</kbd></li>
+                            <li class="list-group-item element-primaire"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL FLAP OPEN (LOWER ECAM)")</li>
+                            <li class="list-group-item element-primaire">APU START <kbd>ON</kbd></li>
+                            <li class="list-group-item element-primaire"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL APU AVAIL (UPPER ECAM)")</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="list-before-start1">
+                        <ul class="list-group">
+                            <li class="list-group-item titre-et-element-primaire">FINDING METAR FOR DEPARTURE</li>
+                            <li class="list-group-item element-primaire">Cliquez sur le bouton <kbd>MCDU MENU</kbd></li>
+                            <li class="list-group-item element-primaire">Cliquez sur le bouton à gauche de ATSU / AOC MENU / WX / WEATHER REQ</li>
+                            <li class="list-group-item element-primaire">Saisir l'ident de l'aéroport</li>
+                            <li class="list-group-item element-primaire">Cliquez à gauche de METAR / SEND* / MESSAGE*</li>
+                            <li class="list-group-item element-primaire">Cliquez sur le bouton <kbd>MCDU MENU</kbd></li>
+                            <li class="list-group-item element-primaire">Cliquez sur le bouton à gauche de ATSU / AOC MENU / RCVD MSGS</li>
+                            <li class="list-group-item element-primaire">Cliquez à gauche de WEATHER DATA.</li>
+                            <hr>
+                            <li class="list-group-item">BARO DEPARTURE <kbd>SET</kbd></li>
+                            <li class="list-group-item">VHF1 BUTTON <kbd>OFF</kbd> (NO WHITE)</li>
+                            <li class="list-group-item">ALTITUDE <kbd>SET</kbd></li>
+                            <li class="list-group-item">FCU CSTR <kbd>ON</kbd></li>
+                            <li class="list-group-item">FCU MODE SELECT <kbd>ARC</kbd></li>
+                            <li class="list-group-item">FCU ZOOM SELECT <kbd>20</kbd></li>
+                            <li class="list-group-item list-group-item-danger"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL BORDING IS COMPLETED")</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="list-before-start2">
+                        <ul class="list-group">
+                            <li class="list-group-item titre-et-element-primaire">OPEN THE EFB DEPARTURE PERF</li>
+                            <li class="list-group-item element-primaire">Select the Departure Runway</li>
+                            <li class="list-group-item element-primaire">Select the Runway Surface</li>
+                            <li class="list-group-item element-primaire">Select the Flap Config</li>
+                            <li class="list-group-item element-primaire">Click <span class="badge bg-success">SYNC LIVE WX</span></li>
+                            <li class="list-group-item element-primaire">On the right, Select VIEW INTERSECTION DATA</li>
+                            <li class="list-group-item element-primaire">Click <span class="badge bg-success">SYNC LOADSHEET (FINAL)</span></li>
+                            <hr>
+                            <li class="list-group-item titre-et-element-primaire">WAITING FOR THE FINAL LOADSHEET (CONTINUING ENTERING MCDU DATA)</li>
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>INIT</kbd> <kbd>B</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-initb"><i class="fas fa-keyboard"></i></button></li>
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>PROG</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-prog"><i class="fas fa-keyboard"></i></button></li>
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>PERF</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-perf"><i class="fas fa-keyboard"></i></button></li>
@@ -121,50 +175,21 @@
                             <li class="list-group-item element-primaire">SAVING AND LOADING FMS FLIGHT PLAN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-managing-flight-plan"><i class="fas fa-keyboard"></i></button></li>
                         </ul>
                     </div>
-                    <div class="tab-pane" id="list-cockpit-preflight2">
-                        <ul class="list-group">
-                            <li class="list-group-item">SEAT BELTS <kbd>ON</kbd></li>
-                            <li class="list-group-item">FUEL PUMPS (6) <kbd>ON</kbd></li>
-                            <li class="list-group-item">APU MASTER SW <kbd>ON</kbd></li>
-                            <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL FLAP OPEN (LOWER ECAM)")</li>
-                            <li class="list-group-item">APU START <kbd>ON</kbd></li>
-                            <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL APU AVAIL (UPPER ECAM)")</li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane" id="list-before-start">
-                        <ul class="list-group">
-                            <li class="list-group-item titre-sans-element-primaire">IN AVITAB, SEARCH FOR THE DEPARTURE AIRPORT ATIS FREQ</li>
-                            <li class="list-group-item">ATIS FREQ ON RADIO  <kbd>SET</kbd></li>
-                            <li class="list-group-item">BARO DEPARTURE <kbd>SET</kbd></li>
-                            <li class="list-group-item">VHF1 BUTTON <kbd>OFF</kbd> (NO WHITE)</li>
-                            <li class="list-group-item">ALTITUDE <kbd>SET</kbd></li>
-                            <li class="list-group-item">FCU CSTR <kbd>ON</kbd></li>
-                            <li class="list-group-item">FCU MODE SELECT <kbd>ARC</kbd></li>
-                            <li class="list-group-item">FCU ZOOM SELECT <kbd>20</kbd></li>
-                            <hr>
-                            <li class="list-group-item titre-et-element-primaire">DOORS & GROUND HANDLING</li>
-                            <li class="list-group-item element-primaire">RADIO <kbd>ATT</kbd> (CLOSE DOORS DEPENDING SITUATION)</li>
-                            <li class="list-group-item element-primaire">RADIO <kbd>MECH</kbd> (CLOSE CARGO DOORS DEPENDING SITUATION)</li>
-                            <li class="list-group-item element-primaire titre-sans-element-primaire">OPEN THE GROUND HANDLING MENU / CONTROL / HIDE ALL</li>
-                            <li class="list-group-item element-primaire">RADIO <kbd>ATT</kbd> (ARM DOORS AND XCHECK)</li>
-                        </ul>
-                    </div>
                     <div class="tab-pane" id="list-pushback-engine-start">
                         <ul class="list-group">
                             <li class="list-group-item titre-et-element-primaire">BEFORE PUSHBACK</li>
                             <li class="list-group-item element-primaire element-lumiere">BEACON <kbd>ON</kbd></li>
                             <li class="list-group-item element-primaire">APU BLEED <kbd>ON</kbd></li>
                             <li class="list-group-item element-primaire">EXT PWR <kbd>OFF</kbd></li>
-                            <li class="list-group-item element-primaire">RADIO <kbd>MECH</kbd> EXT PWR <kbd>OFF</kbd></li>
-                            <li class="list-group-item element-primaire">RADIO <kbd>MECH</kbd> CHOCKS <kbd>REMOVE</kbd></li>
                             <li class="list-group-item titre-et-element-primaire">ATC TCAS PANEL</li>
-                            <li class="list-group-item element-primaire">TRANSPONDER <kbd>ON</kbd></li>
-                            <li class="list-group-item element-primaire">TCAS MODE SELECTOR <kbd>TA ONLY</kbd></li>
+                            <li class="list-group-item element-primaire">ATC MODE SELECTOR <kbd>ON</kbd></li>
+                            <li class="list-group-item element-primaire">TCAS MODE SELECTOR <kbd>TA</kbd></li>
                             <hr>
                             <li class="list-group-item titre-et-element-primaire">PUSHBACK</li>
+                            <li class="list-group-item element-primaire">USE THE EFB PUSHBACH</li>
+                            <li class="list-group-item element-primaire">CONNECT PUSHBACH / START</li>
                             <li class="list-group-item element-primaire">PARKING BRAKE <kbd>OFF</kbd></li>
-                            <li class="list-group-item element-primaire">RADIO <kbd>MECH</kbd> (PUSHBACK 50)</li>
-                            <li class="list-group-item element-primaire">PARKING BRAKE <kbd>ON</kbd></li>
+                            <li class="list-group-item element-primaire">STOP / DISCONNECT PUSHBACH</li>
                             <hr>
                             <li class="list-group-item titre-et-element-primaire">ENGINE START</li>
                             <li class="list-group-item element-primaire">ENGINE MODE <kbd>START</kbd></li>
@@ -219,7 +244,7 @@
                             <li class="list-group-item">THROTTLE N1 <kbd>50%</kbd></li>
                             <li class="list-group-item">PARKING BRAKE <kbd>RELEASE</kbd></li>
                             <li class="list-group-item">THROTTLE N1 <kbd>FLEX/TOGA</kbd></li>
-                            <li class="list-group-item titre-sans-element-primaire important">JOYSTICK DOWN UNTIL 80KTS; NEUTRAL AT 100KTS</li>8
+                            <li class="list-group-item titre-sans-element-primaire important">JOYSTICK DOWN UNTIL 80KTS; NEUTRAL AT 100KTS</li>
                             <hr>
                             <li class="list-group-item titre-et-element-primaire">VR - POSITIVE RATE</li>
                             <li class="list-group-item element-primaire">LANDING GEAR <kbd>UP</kbd></li>
@@ -241,9 +266,9 @@
                             <li class="list-group-item element-primaire element-lumiere">LAND <kbd>OFF</kbd> (1 clic)</li>
                             <li class="list-group-item element-primaire">SEAT BELTS <kbd>OFF</kbd></li>
                             <li class="list-group-item titre-et-element-primaire">QNH FLASHING (PASSING TRANSITION ALT)</li>
-                            <li class="list-group-item element-primaire">BARO <kbd>PULL</kbd> TO STD (one dot)</li>
+                            <li class="list-group-item element-primaire">BARO <kbd>PULL</kbd> TO STD (DOWN ARROW)</li>
                             <li class="list-group-item titre-et-element-primaire">CRUISING</li>
-                            <li class="list-group-item element-primaire list-group-item-danger">TCAS TRAFIC SELECTOR <kbd>N</kbd> (Neutral)</li>
+                            <li class="list-group-item element-primaire list-group-item-danger">TCAS TRAFIC SELECTOR <kbd>ALL</kbd> (Neutral)</li>
                             <hr>
                             <li class="list-group-item titre-et-element-primaire">60 NM before T/D</li>
                             <li class="list-group-item element-primaire list-group-item-danger">CRUISE PAGE <kbd>PROG</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-prog"><i class="fas fa-keyboard"></i></button></li>
@@ -257,7 +282,7 @@
                     <div class="tab-pane" id="list-descent">
                         <ul class="list-group">
                             <li class="list-group-item titre-et-element-primaire">AT 5 NM FROM "T/D"</li>
-                            <li class="list-group-item element-primaire">ALTITUDE BUTTON <kbd>PUSH</kbd> (One Dot)</li>
+                            <li class="list-group-item element-primaire">ALTITUDE BUTTON <kbd>PUSH</kbd> (UP ARROW)</li>
                             <li class="list-group-item element-primaire list-group-item-danger">TCAS TRAFIC SELECTOR <kbd>BLW</kbd></li>
                             <hr>
                             <li class="list-group-item titre-et-element-primaire">GENERAL RULES (PASSING 10000 FT)</li>
@@ -267,8 +292,7 @@
                             <li class="list-group-item element-primaire">FCU "LS" <kbd>ON</kbd> (AS REQUIRED)</li>
                             <hr>
                             <li class="list-group-item titre-et-element-primaire">STD FLASHING (PASSING TRANSITION ALT)</li>
-                            <li class="list-group-item element-primaire">BARO <kbd>PUSH</kbd> TO SET (One Dot)</li>
-                            <li class="list-group-item element-primaire titre-sans-element-primaire">IF ATIS NOT AVAILABLE, USE AVITAB WEATHER DATA</li>
+                            <li class="list-group-item element-primaire">BARO <kbd>PUSH</kbd> TO SET (UP ARROW)</li>
                             <li class="list-group-item element-primaire">BARO ARRIVAL <kbd>SET</kbd></li>
                             <hr>
 
@@ -317,8 +341,8 @@
                             <li class="list-group-item element-primaire">RADAR SYS <kbd>OFF</kbd></li>
                             <li class="list-group-item element-primaire">PWS (Predictive WindShear)<kbd>OFF</kbd></li>
                             <li class="list-group-item titre-et-element-primaire">ATC TCAS PANEL</li>
-                            <li class="list-group-item element-primaire">TCAS MODE SELECTOR <kbd>TA ONLY</kbd></li>
-                            <li class="list-group-item element-primaire">TCAS TRAFIC SELECTOR <kbd>N</kbd></li>
+                            <li class="list-group-item element-primaire">TCAS MODE SELECTOR <kbd>TA</kbd></li>
+                            <li class="list-group-item element-primaire">TCAS TRAFIC SELECTOR <kbd>ALL</kbd></li>
                             <hr>
                             <li class="list-group-item">SPEED BRAKE <kbd>DISARMED</kbd></li>
                             <li class="list-group-item">FLAPS <kbd>UP</kbd></li>
@@ -333,16 +357,16 @@
                     <div class="tab-pane" id="list-parking">
                         <ul class="list-group">
                             <li class="list-group-item list-group-item-danger">PARKING BRAKE <kbd>SET</kbd></li>
-                            <li class="list-group-item">RADIO <kbd>MECH</kbd> CHOCKS <kbd>ADD</kbd></li>
-                            <li class="list-group-item">RADIO <kbd>MECH</kbd> EXT PWR <kbd>ADD</kbd></li>
                             <hr>
+                            <li class="list-group-item">OPEN EFB AND TOGGLE EXT PWR <kbd>ON</kbd></li>
                             <li class="list-group-item">EXT PWR <kbd>ON</kbd></li>
                             <li class="list-group-item">APU BLEED <kbd>ON</kbd></li>
                             <li class="list-group-item">ENGINE 1 <kbd>OFF</kbd></li>
                             <li class="list-group-item">ENGINE 2 <kbd>OFF</kbd></li>
+                            <li class="list-group-item">IN EFB,  TOGGLE JETWAY AND PROCESS DISEMBARK PROCESS</li>
                             <hr>
                             <li class="list-group-item titre-et-element-primaire">ATC TCAS PANEL</li>
-                            <li class="list-group-item element-primaire">TRANSPONDER <kbd>AUTO</kbd></li>
+                            <li class="list-group-item element-primaire">ATC MODE SELECTOR <kbd>AUTO</kbd></li>
                             <li class="list-group-item element-primaire">TCAS MODE SELECTOR <kbd>STBY</kbd></li>
                             <li class="list-group-item titre-et-element-primaire">OVERHEAD</li>
                             <li class="list-group-item element-primaire element-lumiere">BEACON <kbd>OFF</kbd></li>
@@ -350,16 +374,11 @@
                             <li class="list-group-item element-primaire element-lumiere">NOSE LIGHT <kbd>OFF</kbd></li>
                             <li class="list-group-item element-primaire">SEAT BELTS <kbd>OFF</kbd></li>
                             <li class="list-group-item element-primaire">FUEL PUMPS (6) <kbd>OFF</kbd></li>
-                            <hr>
-                            <li class="list-group-item titre-et-element-primaire">GROUND HANDLING</li>
-                            <li class="list-group-item element-primaire titre-sans-element-primaire">OPEN THE GROUND HANDLING MENU / SELECT SERVICES</li>
-                            <li class="list-group-item element-primaire">RADIO <kbd>ATT</kbd> (OPENS DOORS DEPENDING SITUATION)</li>
-                            <li class="list-group-item element-primaire">RADIO <kbd>MECH</kbd> (OPENS CARGO DOORS DEPENDING SITUATION)</li>
                         </ul>
                     </div>
                     <div class="tab-pane" id="list-securing">
                         <ul class="list-group">
-                            <li class="list-group-item">ADIRS DATA <kbd>TEST</kbd></li>
+                            <li class="list-group-item">ADIRS DATA <kbd>WIND</kbd></li>
                             <li class="list-group-item">ADIRS SYS <kbd>OFF</kbd></li>
                             <li class="list-group-item">IR1 & IR2 & IR3 <kbd>OFF</kbd></li>
                             <li class="list-group-item element-lumiere">NAV & LOGO <kbd>OFF</kbd></li>
@@ -398,23 +417,27 @@
             </div>
         </div>
     </div>
-    <!--    modal insert MCDU (INIT A) data -->                     
-    <div class="modal" id="modal-enter-mcdu-inita" tabindex="-1">
+    <!--    modal Inserting Major Data From Simbrief -->                     
+    <div class="modal" id="modal-enter-mcdu-from-simbrief" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">INSERTING MCDU (INIT) A</h5>
+                    <h5 class="modal-title">INSERTING MAJOR DATA FROM SIMBRIEF</h5>
                 </div>
                 <div class="modal-body">
                     <ul class="list-group">
                         <li class="list-group-item titre-et-element-primaire">IMPORTATION DU PLAN DE VOL DE SIMBRIEF VIA LE MDCU</li>
-                        <li class="list-group-item">Cliquez sur le bouton <kbd>INIT</kbd> <kbd>A</kbd></li>
+                        <li class="list-group-item">Cliquez sur le bouton <kbd>MCDU MENU</kbd></li>
+                        <li class="list-group-item">Cliquez sur le bouton à gauche de ATSU</li>
+                        <li class="list-group-item">Cliquez sur le bouton à droite de AOC MENU</li>
+                        <li class="list-group-item">Cliquez sur le bouton à gauche de FLT INIT</li>
+                        <li class="list-group-item">Cliquez sur le bouton à droite de INIT DATA REQ*</li>
+                        <li class="list-group-item">Cliquez sur le bouton <kbd>INIT A</kbd></li>
                         <li class="list-group-item">Cliquez sur le bouton à droite de INIT REQUEST*</li>
                         <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL F-PLN DATALINK IN PROG")</li>
                         <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL AOC ACT F-PLN UPLINK")</li>
-                        <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL PERF DATA UPLINK")</li>
-                        <li class="list-group-item titre-et-element-primaire">SEULEMENT POUR A321</li>
-                        <li class="list-group-item list-group-item-danger">RADIO <kbd>MECH</kbd> CHOCKS <kbd>ADD</kbd></li>
+                        <li class="list-group-item titre-et-element-primaire">INSERT OTHER DATA</li>
+                        <li class="list-group-item">INSERT THE FLT NBR, COST INDEX & CRZ FL FROM <kbd>FENIX</kbd> <kbd>EFB</kbd></li>
                         <li class="list-group-item titre-et-element-primaire">INITIALISER LES IRS</li>
                         <li class="list-group-item">Cliquez sur le bouton à droite de ALIGN IRS</li>
                         <li class="list-group-item titre-et-element-primaire">REQUEST WIND</li>
@@ -638,7 +661,15 @@
                 </div>
                 <div class="modal-body">
                     <ul class="list-group">
-                        <li class="list-group-item">Vérifier que les données sont entrées</li>
+                        <li class="list-group-item titre-et-element-primaire">IMPORTATION DES DONNEES ZFW/ZFWCG et BLOCK</li>
+                        <li class="list-group-item">Cliquez sur le bouton <kbd>MCDU MENU</kbd></li>
+                        <li class="list-group-item">Cliquez sur le bouton à gauche de ATSU</li>
+                        <li class="list-group-item">Cliquez sur le bouton à droite de AOC MENU</li>
+                        <li class="list-group-item">Cliquez sur le bouton à droite de RCVD MSGS</li>
+                        <li class="list-group-item">Cliquez sur le bouton à gauche de LOADSHEET (Le plus récent)</li>
+                        <li class="list-group-item">Cliquez sur le bouton à gauche de *ACCEPT pour valider</li>
+                        <li class="list-group-item">Utilisez le ZFW pour le <kbd>INIT</kbd> <kbd>B</kbd></li>
+                        <li class="list-group-item">Allez à la page suite du LOADSHEET et prendre le MACZFW pour le ZFWCG</li>
                     </ul>
                 </div>
                 <div class="modal-footer">
@@ -679,13 +710,14 @@
                 <div class="modal-body">
                     <ul class="list-group">
                         <li class="list-group-item">Cliquez sur le bouton <kbd>PERF</kbd></li>
-                        <li class="list-group-item titre-et-element-primaire">TAKE OFF PAGE</li>
-                        <li class="list-group-item">Cliquez sur le bouton à gauche de TO DATA</li>
-                        <li class="list-group-item">Cliquez sur le bouton à droite de TO DATA REQUEST*</li>
-                        <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL TAKE OFF DATA UPLINK")</li>
-                        <li class="list-group-item">Cliquez sur le bouton à gauche de TO DATA</li>
-                        <li class="list-group-item">Cliquez sur le bouton à droite de INSERT UPLINK*</li>
-                        <li class="list-group-item list-group-item-danger">VERIFIER le TRANS ALT</li>
+                        <li class="list-group-item">OUVRIR LE <kbd>FENIX</kbd> <kbd>EFB</kbd> DEPARTURE PERF</li>
+                        <li class="list-group-item">Changer la valeur du RUNWAY et du RUNWAY SURFACE si nécessaire</li>
+                        <li class="list-group-item">Changer la valeur du FLAG CONFIG (par exemple 1+F)</li>
+                        <li class="list-group-item">Saisir la valeur de TOW provenant de <kbd>INIT</kbd> <kbd>B</kbd> (TOW)</li>
+                        <li class="list-group-item">Saisir la valeur de MACTOW provenant du dispatch (c'est à dire le LOADSHEET et MACTOW</li>
+                        <li class="list-group-item">On peut appuyer sur SYNC LIVE WX (WEATHER)</li>
+                        <li class="list-group-item">Appuyez sur VIEW INTERSECTION DATA (Choisir F/L quand on est sur le seuil, senon les autres pour un intersection)</li>
+                        <li class="list-group-item">Saisir les valeurs de V1, VR, V2, FLAPS et FLEX TEMP</li>
                         <hr>
                         <li class="list-group-item titre-et-element-primaire">APPR PAGE</li>
                         <li class="list-group-item"><code>EXEMPLE DE RAPPORT MÉTÉO: 262100Z 27007KT CAVOK 08/03
