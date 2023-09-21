@@ -83,11 +83,8 @@
                     <div class="tab-pane" id="list-cockpit-prepar2">
                         <ul class="list-group">
                             <li class="list-group-item titre-et-element-primaire">OVERHEAD LEFT (BOTTOM TO TOP)</li>
-                            <li class="list-group-item element-primaire">CREW SUPPLY <kbd>OFF</kbd></li>
                             <li class="list-group-item element-primaire">GND CTL <kbd>ON</kbd></li>
                             <li class="list-group-item element-primaire">CVR TEST <kbd>HOLD</kbd></li>
-                            <li class="list-group-item element-primaire list-group-item-danger">ADIRS DATA <kbd>STS</kbd></li>
-                            <li class="list-group-item element-primaire list-group-item-danger">ADIRS SYS <kbd>1</kbd></li>
                             <li class="list-group-item element-primaire">IR1 & IR2 & IR3 <kbd>NAV</kbd></li>
                             <li class="list-group-item titre-et-element-primaire">OVERHEAD CENTER (BOTTOM TO TOP)</li>
                             <li class="list-group-item element-primaire element-lumiere">STROBE <kbd>AUTO</kbd></li>
@@ -104,8 +101,9 @@
                     <div class="tab-pane" id="list-cockpit-preflight1">
                         <ul class="list-group">
                             <li class="list-group-item titre-et-element-primaire">INSERTING FLIGHT PLAN USING MCDU (FMC)</li>
+                            <li class="list-group-item element-primaire">INSERTING MCDU (IMPORTING SIMBRIEF) <kbd>MCDU MENU</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-mdcu-menu"><i class="fas fa-keyboard"></i></button></li>
                             <li class="list-group-item element-primaire">VIEWING MCDU <kbd>DATA</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-data"><i class="fas fa-keyboard"></i></button></li>
-                            <li class="list-group-item element-primaire">INSERTING MCDU <kbd>INIT</kbd> <kbd>A</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-inita"><i class="fas fa-keyboard"></i></button></li>
+                            <li class="list-group-item element-primaire">INSERTING MCDU <kbd>INIT A</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-inita"><i class="fas fa-keyboard"></i></button></li>
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>F-PLN</kbd> DEPARTURE<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-fpln-departure"><i class="fas fa-keyboard"></i></button></li>
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>F-PLN</kbd> WAYPOINTS<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-fpln-waypoints"><i class="fas fa-keyboard"></i></button></li>
                             <li class="list-group-item element-primaire">INSERTING MCDU <kbd>F-PLN</kbd> AIRWAYS<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-fpln-airways"><i class="fas fa-keyboard"></i></button></li>
@@ -119,6 +117,9 @@
                             <hr>
                             <li class="list-group-item titre-et-element-primaire">MANAGING FLIGHT PLAN</li>
                             <li class="list-group-item element-primaire">SAVING AND LOADING FMS FLIGHT PLAN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-managing-flight-plan"><i class="fas fa-keyboard"></i></button></li>
+                            <hr>
+                            <li class="list-group-item titre-et-element-primaire">USING CDPLC</li>
+                            <li class="list-group-item element-primaire">CONNECTING MCDU <kbd>ATC COMM</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-using-cdplc"><i class="fas fa-keyboard"></i></button></li>
                         </ul>
                     </div>
                     <div class="tab-pane" id="list-cockpit-preflight2">
@@ -378,6 +379,47 @@
             </div>
         </div>    
     </div>    
+    <!--    modal importing simbrief data -->                     
+    <div class="modal" id="modal-enter-mcdu-mdcu-menu" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">INSERTING MCDU (IMPORTING SIMBRIEF) MCDU MENU</h5>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item titre-et-element-primaire">IMPORTATION DU PLAN DE VOL DE SIMBRIEF VIA LE MDCU</li>
+                        <li class="list-group-item">Cliquez sur le bouton <kbd>MCDU MENU</kbd></li>
+                        <li class="list-group-item">Cliquez sur le bouton à gauche de ATSU</li>
+                        <li class="list-group-item">Cliquez sur le bouton à droite de AOC MENU</li>
+                        <li class="list-group-item">Cliquez sur le bouton à gauche de FLT * INIT</li>
+                        <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL F-PLN DATALINK IN PROG")</li>
+                        <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL AOC ACT F-PLN UPLINK")</li>
+                        <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL PERF DATA UPLINK")</li>
+                        <li class="list-group-item titre-et-element-primaire">IMPRIMER LA METEO SELON LE PLAN DE VOL</li>
+                        <li class="list-group-item">Cliquez sur le bouton à droite de WX/ATIS</li>
+                        <li class="list-group-item">Cliquez sur le bouton à droite de METAR*</li>
+                        <li class="list-group-item">Cliquez sur le bouton à gauche de RETURN</li>
+                        <li class="list-group-item">Cliquez sur le bouton à droite de RECEIVED MESSAGES</li>
+                        <li class="list-group-item">Cliquez sur le bouton à gauche, sur l'aéroport pour obtenir le METAR</li>
+                        <li class="list-group-item">Cliquez à droite sur sur le bouton à gauche de l'aéroport pour obtenir son METAR</li>
+                        <li class="list-group-item">Pour l'imprimer, cliquez à droite sur PRINT*</li>
+                        <li class="list-group-item">En bas du Pedestal (la feuille est sorti de l'imprimante)</li>
+                        <li class="list-group-item">Cliquez dessus pour la voir au dessus des Throttles</li>
+                        <li class="list-group-item titre-et-element-primaire">INITIALISER LES IRS</li>
+                        <li class="list-group-item">Cliquez sur le bouton à droite de ALIGN IRS</li>
+                        <li class="list-group-item titre-et-element-primaire">REQUEST WIND</li>
+                        <li class="list-group-item">Cliquez sur le bouton à droite de WIND</li>
+                        <li class="list-group-item">Cliquez sur le bouton à droite de WIND REQUEST*</li>
+                        <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL WIND DATA UPLINK")</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--    modal insert MCDU (DATA) data -->                       
     <div class="modal" id="modal-enter-mcdu-data" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
@@ -407,16 +449,12 @@
                 </div>
                 <div class="modal-body">
                     <ul class="list-group">
-                        <li class="list-group-item titre-et-element-primaire">IMPORTATION DU PLAN DE VOL DE SIMBRIEF VIA LE MDCU</li>
+                        <li class="list-group-item titre-et-element-primaire">VERIFICATION DES DONNEE DU PLAN DE VOL DE SIMBRIEF</li>
                         <li class="list-group-item">Cliquez sur le bouton <kbd>INIT</kbd> <kbd>A</kbd></li>
-                        <li class="list-group-item">Cliquez sur le bouton à droite de INIT REQUEST*</li>
-                        <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL F-PLN DATALINK IN PROG")</li>
-                        <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL AOC ACT F-PLN UPLINK")</li>
-                        <li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL PERF DATA UPLINK")</li>
-                        <li class="list-group-item titre-et-element-primaire">SEULEMENT POUR A321</li>
-                        <li class="list-group-item list-group-item-danger">RADIO <kbd>MECH</kbd> CHOCKS <kbd>ADD</kbd></li>
                         <li class="list-group-item titre-et-element-primaire">INITIALISER LES IRS</li>
-                        <li class="list-group-item">Cliquez sur le bouton à droite de ALIGN IRS</li>
+                        <li class="list-group-item">Cliquez sur le bouton à droite de IRS INIT</li>
+                        <li class="list-group-item">Cliquez sur le bouton à droite de ALIGN ON REF*</li>
+                        <li class="list-group-item">Cliquez sur le bouton à droite de CONFRIM ALIGN*</li>
                         <li class="list-group-item titre-et-element-primaire">REQUEST WIND</li>
                         <li class="list-group-item">Cliquez sur le bouton à droite de WIND</li>
                         <li class="list-group-item">Cliquez sur le bouton à droite de WIND REQUEST*</li>
@@ -711,6 +749,31 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">MANAGING FMS FLIGHT PLAN</h5>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item titre-et-element-primaire">SAUVEGARDE PLAN DE VOL</li>
+                        <li class="list-group-item element-primaire">cliquez sur le bouton à droite de SAVE (Pour accéder aux options de sauvegarde)</li>
+                        <li class="list-group-item element-primaire">Tapez par exemple CYULCYYZTEST et cliquez sur le bouton à gauche de NAME FOR ACTIVE PLAN</li>
+                        <li class="list-group-item element-primaire">cliquez sur le bouton à droite de EXECUTE</li>
+                        <hr>
+                        <li class="list-group-item titre-et-element-primaire">CHARGEMENT D'UN PLAN DE VOL</li>
+                        <li class="list-group-item element-primaire">cliquez sur le bouton à gauche de XP-PLAN LOAD (Pour accéder à la liste des sauvegardes)</li>
+                        <li class="list-group-item element-primaire">cliquez sur le bouton à gauche de la sauvegarde choisi</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    modal using CPDLC here -->                     
+    <div class="modal" id="modal-using-cdplc" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">USING CDPLC</h5>
                 </div>
                 <div class="modal-body">
                     <ul class="list-group">
